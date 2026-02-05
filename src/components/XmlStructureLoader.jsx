@@ -214,11 +214,6 @@ export function XmlStructureLoader() {
 		return faces;
 	};
 
-	if (error) {
-		console.error('XML Structure Error:', error);
-		return null;
-	}
-
 	return (
 		<>
 			{entities.map((entityData) => (
