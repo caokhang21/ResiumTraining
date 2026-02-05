@@ -42,8 +42,6 @@ export function XmlStructureLoader() {
 
 	const loadXmlStructure = async (url) => {
 		try {
-			setError(null);
-
 			const response = await fetch(url);
 			const xmlText = await response.text();
 
