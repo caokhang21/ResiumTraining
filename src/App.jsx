@@ -3,8 +3,7 @@ import { Cartesian3, Ion } from 'cesium';
 import './App.css';
 import { XmlStructureLoader } from './components/XmlStructureLoader';
 
-Ion.defaultAccessToken =
-	'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyZTc0YmU5Ny1hODk1LTQ0ZTMtYjMzNS03ODQyMjE3NWRkOTciLCJpZCI6Mzg3MTYzLCJpYXQiOjE3NzAyNTY5OTh9.UMn_i42e3OxVGJ59MfsSEEcrXR4NA9qz0aQp92eQAB8';
+Ion.defaultAccessToken = import.meta.env.VITE_ION_ACCESS_TOKEN;
 
 function App() {
 	return (
